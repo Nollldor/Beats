@@ -1,0 +1,65 @@
+.hello {
+  background-color: #F5F5F5;
+}
+
+.hello__container {
+  background: url("../img/beats_solo_3.png") top 46px right 100px no-repeat, #F5F5F5;
+}
+
+.hello__box {
+  padding-top: 64px;
+  padding-left: 80px;
+  margin-bottom: 70px;
+}
+
+.hello__title {
+  width: 400px;
+  height: 156px;
+  font-family: Play;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hello__description {
+  width: 332px;
+  height: 50px;
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 1.19em;
+  margin-bottom: 36px;
+}
+
+.hello__properties {
+  padding-left: 80px;
+}
+
+.properties__list,
+.properties__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.properties__item {
+  margin-right: 9px;
+}
+
+.properties__icon {
+  margin-right: 11px;
+}
+
+.properties__property {
+  width: 114px;
+  height: 36px;
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.12em;
+}
