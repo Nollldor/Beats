@@ -1,0 +1,116 @@
+.why__container {
+  padding-top: 100px;
+  height: 652;
+  position: relative;
+}
+.why__container:before {
+  position: absolute;
+  content: url("../img/why_before.png");
+  -webkit-transform: translate(2273%, -263%);
+          transform: translate(2273%, -263%);
+}
+.why__container:after {
+  position: absolute;
+  content: url("../img/why_after.png");
+  -webkit-transform: translate(153%, 168%);
+          transform: translate(153%, 168%);
+}
+
+.why__lead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 65px;
+}
+.why__lead .lead__title {
+  font-family: Play;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.08em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.why__lead .lead__desc {
+  padding: 0 25%;
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.187em;
+  text-align: center;
+  color: #666;
+}
+
+.why__features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 80px;
+}
+.why__features .why__feature {
+  width: 29.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.why__features .why__feature:after {
+  position: absolute;
+  content: url(../img/why_feature_split.png);
+  -webkit-transform: translate(245%, 200%);
+          transform: translate(245%, 200%);
+}
+.why__features .why__feature:last-child:after {
+  content: "";
+}
+.why__features .why__feature .feature__icon-wrapper {
+  width: 128px;
+  height: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+  background: url(../img/why_icon_back.png) no-repeat;
+}
+.why__features .why__feature .feature__title {
+  font-family: Play;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.16em;
+  margin-bottom: 5px;
+}
+.why__features .why__feature .feature__desc {
+  width: 247px;
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.187em;
+  text-align: center;
+  color: #666;
+}

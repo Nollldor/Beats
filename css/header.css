@@ -1,8 +1,9 @@
 .header {
-  background-color: #F5F5F5;
+  background: url(../img/beats_solo_3.png) top 69% right 37% no-repeat, #F5F5F5;
+  height: 652px;
 }
 
-.header__container,
+.header__firstrow,
 .menu__list,
 address {
   display: -webkit-box;
@@ -11,6 +12,9 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header__container {
@@ -20,7 +24,6 @@ address {
 .logo {
   width: 40px;
   height: 40px;
-  margin-right: 40px;
 }
 
 .menu {
@@ -28,7 +31,7 @@ address {
   font-weight: normal;
   font-size: 18px;
   line-height: 1.67em;
-  margin-right: 46px;
+  margin-right: 12px;
 }
 
 .menu__item {
@@ -61,4 +64,57 @@ address {
   width: 14px;
   height: 14px;
   margin-right: 6px;
+}
+
+.header__box {
+  padding-top: 64px;
+  margin-bottom: 85px;
+}
+
+.header__title {
+  width: 400px;
+  height: 156px;
+  font-family: Play;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.header__description {
+  width: 332px;
+  height: 50px;
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 1.19em;
+  margin-bottom: 53px;
+}
+
+.properties__list,
+.properties__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.properties__item {
+  margin-right: 3px;
+}
+
+.properties__icon {
+  margin-right: 20px;
+}
+
+.properties__property {
+  width: 114px;
+  height: 36px;
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.12em;
 }
