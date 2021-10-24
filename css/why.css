@@ -1,6 +1,5 @@
 .why__container {
   padding-top: 100px;
-  height: 652;
   position: relative;
 }
 .why__container:before {
@@ -75,8 +74,8 @@
 .why__features .why__feature:after {
   position: absolute;
   content: url(../img/why_feature_split.png);
-  -webkit-transform: translate(245%, 200%);
-          transform: translate(245%, 200%);
+  -webkit-transform: translate(245%, 243%);
+          transform: translate(245%, 243%);
 }
 .why__features .why__feature:last-child:after {
   content: "";
@@ -102,7 +101,7 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 1.16em;
-  margin-bottom: 5px;
+  margin-bottom: 9px;
 }
 .why__features .why__feature .feature__desc {
   width: 247px;
@@ -110,7 +109,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.187em;
+  line-height: 1.1875em;
   text-align: center;
   color: #666;
 }

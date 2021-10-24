@@ -1,6 +1,5 @@
 .header {
-  background: url(../img/beats_solo_3.png) top 69% right 37% no-repeat, #F5F5F5;
-  height: 652px;
+  background: url(../img/beats_solo_3.png) top 69% right 35% no-repeat, #F5F5F5;
 }
 
 .header__firstrow,
@@ -27,6 +26,7 @@ address {
 }
 
 .menu {
+  font-family: Alegreya Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -57,6 +57,13 @@ address {
   font-weight: normal;
   font-size: 18px;
   line-height: 1em;
+}
+.contacts__phone {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.contacts__phone:hover {
+  color: #E01F3D;
 }
 
 .contacts__phone::before {

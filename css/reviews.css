@@ -11,6 +11,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .reviews__container .reviews__title {
   font-family: Play;
@@ -95,13 +96,15 @@
   margin-right: 0;
 }
 .reviews__container:before {
+  position: absolute;
   content: url(../img/reviews_before.png);
-  -webkit-transform: translate(0%, 125%);
-          transform: translate(0%, 125%);
+  -webkit-transform: translate(0%, 23%);
+          transform: translate(0%, 23%);
   z-index: 1;
 }
 .reviews__container:after {
+  position: absolute;
   content: url(../img/reviews_after.png);
-  -webkit-transform: translate(-1287%, -36%);
-          transform: translate(-1287%, -36%);
+  -webkit-transform: translate(-1287%, 1384%);
+          transform: translate(-1287%, 1384%);
 }

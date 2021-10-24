@@ -68,13 +68,18 @@ img {
 
 /* ------------ */
 body {
-  font-family: Alegreya sans;
+  font-family: Play;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 16px;
-  line-height: 1.42;
+  line-height: 1.1875em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 1100px;
+  height: 652px;
 }
 
 .wrapper--mainpage {
@@ -102,14 +107,4 @@ body {
 
 .button:hover {
   background: #CA1B36;
-}
-
-.button--light {
-  background: #fff;
-  color: #8F00FF;
-  border: 1px solid #8F00FF;
-}
-
-.button--light:hover {
-  color: white;
 }
