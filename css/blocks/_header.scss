@@ -1,0 +1,60 @@
+.header,
+.menu__list,
+address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.menu {
+    font-family: Alegreya Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.67em;
+    margin-right: 12px;
+}
+
+.menu__item {
+    margin-right: 27px;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.menu__link {
+    transition: color 0.3s;
+}
+
+.menu__link:hover {
+    color: $red;
+}
+
+.contacts {
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1em;
+
+    &__phone {
+        transition: color 0.3s;
+        
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
+.contacts__phone::before {
+    content: url("../img/phone.svg");
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+}
