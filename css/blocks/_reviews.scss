@@ -5,71 +5,108 @@
         position: absolute;
         content: url(../img/reviews_after.png);
         left: 10%;
-        bottom: -20px;
+        bottom: rem(-20px);
     }
 }
 
 .reviews__container {
-    padding-top: 64px;
-    padding-bottom: 63px;
+    padding-top: rem(64px);
+    padding-bottom: rem(63px);
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 
+    @include tablets {
+        padding-top: rem(130px);
+    }
+
     .reviews__title {
         font-family: Play;
         font-style: normal;
         font-weight: bold;
-        font-size: 48px;
+        font-size: rem(48px);
         line-height: 1.08em;
         text-transform: uppercase;
-        margin-bottom: 32px;
+        margin-bottom: rem(32px);
         z-index: 10;
+        
     }
 
     .reviews__review {
         display: flex;
         background: #F8FAF9;
-        padding: 42px;
-        width: 940px;
+        padding: rem(42px);
+        width: 100%;
+
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: rem(37px) 0 rem(10px) 0;
+        }
 
         .review__photo{
-            width: 253px;
-            height: 264px;
-            margin-right: 40px;
+            width: rem(253px);
+            height: rem(264px);
+            margin-right: rem(40px);
+
+            @include tablets {
+                margin-right: 0;
+                width: rem(130px);
+                height: rem(130px);
+                margin-bottom: rem(10px);
+            }
         }
 
         .review__text {
             display: flex;
             flex-direction: column;
-            padding-top: 27px;
-            padding-bottom: 21px;
+            padding-top: rem(27px);
+            padding-bottom: rem(21px);
+            
+            @include tablets {
+                align-items: center;
+                padding-top: rem(0px);
+                padding-bottom: rem(0px);
+            }
 
             .review__title {
                 font-family: Play;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 24px;
+                font-size: rem(24px);
                 line-height: 1.67em;
-                margin-bottom: 22px;
+                margin-bottom: rem(22px);
+
+                @include tablets {
+                    margin-bottom: rem(10px);
+                }
             }
 
             .review__desc {
-                width: 498px;
+                width: 83%;
                 font-family: Play;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 16px;
+                font-size: rem(16px);
                 line-height: 1.187em;
-                margin-bottom: 43px;
+                margin-bottom: rem(43px);
+                display: flex;
+                justify-content: center;
+
+                @include tablets {
+                    width: 93%;
+                    margin-bottom: rem(28px);
+                }
             }
 
             .review__signature {
                 font-family: Play;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 18px;
+                font-size: rem(18px);
                 line-height: 1.17em;
             }
         }
@@ -78,17 +115,17 @@
 
     .reviews__pager {
         display: flex;
-        padding-top: 15px;
-        padding-bottom: 63px;
+        padding-top: rem(15px);
+        padding-bottom: rem(63px);
 
         .pager__item {
-            width: 74px;
-            height: 74px;
-            margin-right: 6px;
+            width: rem(74px);
+            height: rem(74px);
+            margin-right: rem(6px);
 
             .pager__icon{
-                border: 4px solid #fff;
-                border-radius: 105px;
+                border: rem(4px) solid #fff;
+                border-radius: rem(105px);
                 transition: border-color 0.3s;
 
                 &:hover {

@@ -1,7 +1,9 @@
 html {
     font-family: "Open Sans";
-    font-size: 16px;
+    font-size: 16px 
 }
+
+
 
 body, html {
     height: 100%;
@@ -60,32 +62,40 @@ img {
 .container {
     margin: 0 auto;
     width: 100%;
-    height: 100%;
-    max-width: 1100px;
+    max-width: rem(1100px);
 }
 
 /* ------------ */
+html {
+    font-size: $baseFontSize;   
 
+    /*@include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+
+    @include phones {
+        font-size: $baseFontSize - 2px;
+    }*/
+}
 
 
 body {
     font-family: Play;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
     line-height: 1.1875em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.container{
-    width: 1100px;
-    height: 652px;
+.container {
+    width: 95%;
+
 }
 
 section {
     height: 100vh;
-    min-height: 652px;
+    min-height: rem(652px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,25 +103,29 @@ section {
 
 .wrapper--mainpage {
     color: #292929;
-    min-width: 1025px;
+    overflow: hidden;
 }
 
 .button {
-    padding: 18px 41px;
+    padding: rem(18px) rem(41px);
     text-transform: uppercase;
     text-align: center;
-    width: 163px;
-    height: 54px;
+    width: rem(163px);
+    height: rem(54px);
     background: #E01F3D;
-    border-radius: 100px;
+    border-radius: rem(100px);
     font-family: Play;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: rem(16px);
     line-height: 1.12em;
     color: white;
     text-decoration: none;
     transition: background-color 0.3s;
+
+    @include tablets {
+        height: rem(60px);
+    }
 }
 
 .button:hover {

@@ -1,7 +1,7 @@
 $gray_font: #666;
 
 .why__container {
-    padding-top: 100px; 
+    padding-top: rem(100px); 
 }
 
 .why {
@@ -10,14 +10,14 @@ $gray_font: #666;
     &:before {
         position: absolute;
         content: url("../img/why_before.png");
-        top: -20px;
+        top: rem(-20px);
         right: 10%
     }
 
     &:after{
         position: absolute;
         content: url("../img/why_after.png");
-        bottom: -20px;
+        bottom: rem(-20px);
         left: 10%
     }
 }
@@ -26,16 +26,17 @@ $gray_font: #666;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 65px;
+    margin-bottom: rem(65px);
 
     & .lead__title {
         font-family: Play;
         font-style: normal;
         font-weight: bold;
-        font-size: 48px;
+        font-size: rem(48px);
         line-height: 1.08em;
         text-transform: uppercase;
-        margin-bottom: 18px;
+        margin-bottom: rem(18px);
+        text-align: center;
     }
 
     & .lead__desc {
@@ -43,7 +44,7 @@ $gray_font: #666;
         font-family: Play;
         font-style: normal;
         font-weight: normal; 
-        font-size: 16px;
+        font-size: rem(16px);
         line-height: 1.187em;
         text-align: center;
         color: $gray_font;
@@ -53,10 +54,11 @@ $gray_font: #666;
 .why__features {
     display: flex;
     justify-content: space-between;
-    margin: 0 80px;
+    margin: 0 auto;
+    text-align: center;
 
     & .why__feature {
-        width: 29.5%;
+        width: 31.5%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -65,7 +67,12 @@ $gray_font: #666;
         &:after {
             position: absolute;
             content: url(../img/why_feature_split.png);
-            transform: translate(245%, 243%);
+            top: 20%;
+            left: 93%;
+
+            @include tablets {
+                display: none;
+            }
         }
 
         &:last-child:after {
@@ -73,30 +80,30 @@ $gray_font: #666;
         }
 
         & .feature__icon-wrapper {
-            width: 128px;
-            height: 128px;
+            width: rem(128px);
+            height: rem(128px);
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 24px;
-            background: url(../img/why_icon_back.png) no-repeat;
+            margin-bottom: rem(24px);
+            background: url(../img/why_icon_back.png) center center / 95% no-repeat
         }
 
         & .feature__title {
             font-family: Play;
             font-style: normal;
             font-weight: bold;
-            font-size: 24px;
+            font-size: rem(24px);
             line-height: 1.16em;
-            margin-bottom: 9px;
+            margin-bottom: rem(9px);
         }
 
         & .feature__desc {
-            width: 247px;
+            width: 99%;
             font-family: Play;
             font-style: normal;
             font-weight: normal;
-            font-size: 16px;
+            font-size: rem(16px);
             line-height: 1.1875em;
             text-align: center;
             color: $gray_font;
