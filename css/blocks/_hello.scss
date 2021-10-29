@@ -14,13 +14,12 @@ $red: #E01F3D;
     height: 100%;
 
     @include tablets {
-        background: url(../img/beats_solo_3_tablets.png) top 32% center/45% auto no-repeat;
+        background: url(../img/beats_solo_3_tablets.png) top 32% center / 32% auto no-repeat;
     }
 }
 
 .hello__box {
     padding-top: rem(64px);
-    margin-bottom: rem(85px);
     
     @include tablets {
         width: 100%;

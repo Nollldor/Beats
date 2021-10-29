@@ -19,8 +19,8 @@
     position: relative;
 
     @include tablets {
-        padding-top: 0;
-        padding-bottom: 0;
+        //padding-top: 0;
+        //padding-bottom: 0;
         background-position: center;
     }
 }
@@ -33,6 +33,11 @@
     line-height: 1.083em;
     text-transform: uppercase;
     margin-bottom: rem(58px);
+    text-align: center;
+
+    @include tablets {
+        margin-bottom: rem(30px);
+    }
 }
 
 .form, 
@@ -60,6 +65,7 @@
 
     @include tablets {
         margin-right: 0;
+        padding-top: rem(5px);
     }
 
     &:last-child {
@@ -96,6 +102,10 @@
     border-radius: rem(4px);
     border: rem(3px) solid transparent;
 
+    @include tablets {
+        padding: rem(8px) rem(10px);
+    }
+
     &:focus {
         outline: none;
         border-color    : #E01F3D;
@@ -106,6 +116,11 @@
     height: rem(152px);
     resize: none;
     margin-bottom: rem(25px);
+
+    @include tablets {
+        height: rem(82px);
+        margin-bottom: rem(1    5px);
+    }
 }
 
 .form__controls,
@@ -121,6 +136,10 @@
 
     &--last {
         margin-bottom: rem(50px);
+
+        @include tablets {
+            margin-bottom: rem(25px);
+        }
     }
 }
 .radio {

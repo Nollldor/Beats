@@ -64,19 +64,23 @@ img {
 .container {
   margin: 0 auto;
   width: 100%;
+  height: 100%;
   max-width: 68.75rem;
 }
 
 /* ------------ */
 html {
   font-size: 16px;
-  /*@include tablets {
-      font-size: $baseFontSize - 1px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
   }
-
-  @include phones {
-      font-size: $baseFontSize - 2px;
-  }*/
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -503,13 +507,12 @@ template {
 }
 @media screen and (max-width: 768px) {
   .hello__container {
-    background: url(../img/beats_solo_3_tablets.png) top 32% center/45% auto no-repeat;
+    background: url(../img/beats_solo_3_tablets.png) top 32% center/32% auto no-repeat;
   }
 }
 
 .hello__box {
   padding-top: 4rem;
-  margin-bottom: 5.3125rem;
 }
 @media screen and (max-width: 768px) {
   .hello__box {
@@ -1048,8 +1051,6 @@ address {
 }
 @media screen and (max-width: 768px) {
   .order__container {
-    padding-top: 0;
-    padding-bottom: 0;
     background-position: center;
   }
 }
@@ -1062,6 +1063,12 @@ address {
   line-height: 1.083em;
   text-transform: uppercase;
   margin-bottom: 3.625rem;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .order__title {
+    margin-bottom: 1.875rem;
+  }
 }
 
 .form,
@@ -1097,6 +1104,7 @@ address {
 @media screen and (max-width: 768px) {
   .form__col {
     margin-right: 0;
+    padding-top: 0.3125rem;
   }
 }
 .form__col:last-child {
@@ -1133,6 +1141,11 @@ address {
   border-radius: 0.25rem;
   border: 0.1875rem solid transparent;
 }
+@media screen and (max-width: 768px) {
+  .form__input {
+    padding: 0.5rem 0.625rem;
+  }
+}
 .form__input:focus {
   outline: none;
   border-color: #E01F3D;
@@ -1142,6 +1155,12 @@ address {
   height: 9.5rem;
   resize: none;
   margin-bottom: 1.5625rem;
+}
+@media screen and (max-width: 768px) {
+  .form__input--textarea {
+    height: 5.125rem;
+    margin-bottom: 1 5px/16px0rem;
+  }
 }
 
 .form__controls,
@@ -1161,6 +1180,11 @@ address {
 }
 .form__controls--last {
   margin-bottom: 3.125rem;
+}
+@media screen and (max-width: 768px) {
+  .form__controls--last {
+    margin-bottom: 1.5625rem;
+  }
 }
 
 .radio {
