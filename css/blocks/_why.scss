@@ -1,10 +1,10 @@
 $gray_font: #666;
 
 .why__container {
-    padding-top: rem(100px); 
+    padding: rem(100px) 0; 
 
     @include phones {
-        padding-top: rem(37px);
+        padding: rem(37px) 0;
         width: 100%;
     }
 }

@@ -438,7 +438,7 @@ body {
 
 section {
   height: 100vh;
-  min-height: 40.75rem;
+  min-height: 43.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -749,11 +749,11 @@ address {
 }
 
 .why__container {
-  padding-top: 6.25rem;
+  padding: 6.25rem 0;
 }
 @media screen and (max-width: 480px) {
   .why__container {
-    padding-top: 2.3125rem;
+    padding: 2.3125rem 0;
     width: 100%;
   }
 }
