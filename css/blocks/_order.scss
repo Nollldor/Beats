@@ -7,6 +7,7 @@
         content: url("../img/order_before.png");
         top: rem(-20px);
         right: 10%;
+        z-index: $decorZ-index;
     }
 }
 .order__container {
@@ -15,12 +16,18 @@
     align-items: center;
     background: url(../img/form_background.png);
     color: #fff;
-    padding: rem(68px) rem(80px) rem(85px);
+    padding: 9% 11% 10%;
     position: relative;
 
     @include tablets {
         //padding-top: 0;
         //padding-bottom: 0;
+        background-position: center;
+    }
+    @include phones {
+        padding-top: 18%;
+        padding-left: 0;
+        padding-right: 0;
         background-position: center;
     }
 }
@@ -36,7 +43,11 @@
     text-align: center;
 
     @include tablets {
-        margin-bottom: rem(30px);
+        margin-bottom: rem(25px);
+    }
+    @include phones {
+        font-size: rem(32px);
+        margin-bottom: rem(35px);
     }
 }
 
@@ -48,14 +59,26 @@
 .form {
     @include tablets {
         flex-direction: column;
-        padding: 0 10%;
+        padding: 0 8%;
     }
+    @include phones {
+        flex-direction: column;
+        padding: 0 0;
+    }
+
 }
 .form__row {
     margin-bottom: rem(7px);
 
+    @include tablets {
+        margin-bottom: rem(9px);
+    }
+
     &:last-child {
         margin-bottom: 0;
+        @include tablets {
+            margin-bottom: rem(9px);
+        }
     }
 }
 
@@ -68,8 +91,16 @@
         padding-top: rem(5px);
     }
 
+    @include phones {
+        margin-bottom: rem(10px);
+    }
+
     &:last-child {
         margin-right: 0;
+
+        @include phones {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -119,7 +150,7 @@
 
     @include tablets {
         height: rem(82px);
-        margin-bottom: rem(1    5px);
+        margin-bottom: rem(10px);
     }
 }
 
@@ -134,12 +165,20 @@
     margin-bottom: rem(19px);
     padding-left: rem(4px);
 
+    @include phones {
+        justify-content: center;
+    }
+
     &--last {
         margin-bottom: rem(50px);
 
         @include tablets {
-            margin-bottom: rem(25px);
+            margin-bottom: rem(35px);
         }
+        @include phones {
+            margin-bottom: rem(35px);
+        }
+
     }
 }
 .radio {

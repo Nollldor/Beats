@@ -16,6 +16,12 @@ $red: #E01F3D;
     @include tablets {
         background: url(../img/beats_solo_3_tablets.png) top 32% center / 32% auto no-repeat;
     }
+
+    @include phones {
+        padding-top: rem(32px);
+        background: url(../img/beats_solo_3_tablets.png) top 25% center/71% auto no-repeat;
+
+    }
 }
 
 .hello__box {
@@ -44,8 +50,13 @@ $red: #E01F3D;
     margin-bottom: rem(20px);
 
     @include tablets {
-        width: 87%;
+        width: 80%;
         margin-bottom: rem(5px);
+    }
+
+    @include phones {
+        font-size: rem(32px);
+        margin-bottom: rem(20px);
     }
 }
 
@@ -62,6 +73,12 @@ $red: #E01F3D;
         margin-bottom: rem(23px);
         width: 50%;
     }
+
+    @include phones {
+        font-size: rem(21px);
+        line-height: 1.11em;
+        width: 73%;
+    }
 }
 
 .properties__list,
@@ -74,6 +91,8 @@ $red: #E01F3D;
 }
 
 .properties__icon {
+    width: rem(52px);
+    height: rem(52px);
     margin-right: rem(20px);
 }
 .properties__property {

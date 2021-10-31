@@ -5,6 +5,8 @@ address {
     justify-content: space-between;
 }
 
+
+
 .logo {
     width: rem(40px);
     height: rem(40px);
@@ -72,11 +74,14 @@ address {
     }
 }
 
-.contacts__phone::before {
-    content: url("../img/phone.svg");
+.contacts__phone--icon {
     width: rem(14px);
     height: rem(14px);
     margin-right: rem(6px);
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .header .contacts__phone {

@@ -2,6 +2,11 @@ $gray_font: #666;
 
 .why__container {
     padding-top: rem(100px); 
+
+    @include phones {
+        padding-top: rem(37px);
+        width: 100%;
+    }
 }
 
 .why {
@@ -11,14 +16,16 @@ $gray_font: #666;
         position: absolute;
         content: url("../img/why_before.png");
         top: rem(-20px);
-        right: 10%
+        right: 10%;
+        z-index: $decorZ-index;
     }
 
     &:after{
         position: absolute;
         content: url("../img/why_after.png");
         bottom: rem(-20px);
-        left: 10%
+        left: 10%;
+        z-index: $decorZ-index;
     }
 }
 
@@ -27,6 +34,10 @@ $gray_font: #666;
     flex-direction: column;
     align-items: center;
     margin-bottom: rem(65px);
+
+    @include phones {
+        margin-bottom: rem(55px);
+    }
 
     & .lead__title {
         font-family: Play;
@@ -37,6 +48,10 @@ $gray_font: #666;
         text-transform: uppercase;
         margin-bottom: rem(18px);
         text-align: center;
+
+        @include phones {
+            font-size: rem(32px);
+        }
     }
 
     & .lead__desc {
@@ -48,6 +63,10 @@ $gray_font: #666;
         line-height: 1.187em;
         text-align: center;
         color: $gray_font;
+
+        @include phones {
+            padding: 0 5%;
+        }
     }
 }
 
@@ -57,12 +76,30 @@ $gray_font: #666;
     margin: 0 auto;
     text-align: center;
 
+    @include phones {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     & .why__feature {
         width: 31.5%;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
+
+        @include phones {
+            flex-direction: row;
+            width: 95%;
+            margin-bottom: 8%;
+        }
+
+        &:last-child {
+            @include phones {
+                margin-bottom: 0;
+            }
+        }
 
         &:after {
             position: absolute;
@@ -86,7 +123,18 @@ $gray_font: #666;
             justify-content: center;
             align-items: center;
             margin-bottom: rem(24px);
-            background: url(../img/why_icon_back.png) center center / 95% no-repeat
+            background: url(../img/why_icon_back.png) center center / 95% no-repeat;
+
+            & .feature__icon {
+                width: rem(68px);
+                height: rem(68px);
+            }
+
+            @include phones {
+                width: rem(128px);
+                margin-right: rem(12px);
+                margin-bottom: 0;
+            }
         }
 
         & .feature__title {
@@ -96,6 +144,10 @@ $gray_font: #666;
             font-size: rem(24px);
             line-height: 1.16em;
             margin-bottom: rem(9px);
+
+            @include phones {
+                text-align: left;
+            }
         }
 
         & .feature__desc {
@@ -107,11 +159,22 @@ $gray_font: #666;
             line-height: 1.1875em;
             text-align: center;
             color: $gray_font;
+
+            @include phones {
+                text-align: left;
+            }
         }
     }
 }
 
 
-
+.feature__text-wrapper {
+    @include phones {
+        width: 67%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
 
 

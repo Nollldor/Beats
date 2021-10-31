@@ -6,19 +6,21 @@
         content: url(../img/reviews_after.png);
         left: 10%;
         bottom: rem(-20px);
+        z-index: $decorZ-index;
     }
 }
 
 .reviews__container {
     padding-top: rem(64px);
-    padding-bottom: rem(63px);
+    padding-bottom: 7%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 
     @include tablets {
-        padding-top: rem(130px);
+            padding-top: 15%;
+        
     }
 
     .reviews__title {
@@ -30,6 +32,10 @@
         text-transform: uppercase;
         margin-bottom: rem(32px);
         z-index: 10;
+
+        @include phones {
+            font-size: rem(32px);
+        }
         
     }
 
@@ -44,7 +50,8 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: rem(37px) 0 rem(10px) 0;
+            padding: rem(47px) 0 rem(40px) 0;
+            margin-bottom: rem(20px);
         }
 
         .review__photo{
@@ -56,7 +63,11 @@
                 margin-right: 0;
                 width: rem(130px);
                 height: rem(130px);
-                margin-bottom: rem(10px);
+                margin-bottom: rem(30px);
+            }
+
+            @include phones {
+                margin-bottom: rem(15px);
             }
         }
 
@@ -98,7 +109,11 @@
 
                 @include tablets {
                     width: 93%;
-                    margin-bottom: rem(28px);
+                    margin-bottom: rem(38px);
+                }
+                @include phones {
+                    width: 93%;
+                    margin-bottom: rem(50px);
                 }
             }
 
@@ -142,7 +157,11 @@
     &:before {
         position: absolute;
         content: url(../img/reviews_before.png);
-        transform: translate(0%, 23%);
+        transform: translate(0%, 34%);
         z-index: 1;
+
+        @include phones {
+            transform: translate(0%, 12%);
+        }
     }
 }

@@ -1,5 +1,6 @@
 //variables
 $baseFontSize: 16px;
+$decorZ-index: 10;
 
 //breakpoints
 $tablets: 768px;
@@ -13,8 +14,9 @@ $phones: 480px;
 @import "_media.scss";
 
 //base
-@import "./blocks/_base.scss";
+
 @import "./blocks/_normalize.scss";
+@import "./blocks/_base.scss";
 
 //sections
 @import "./blocks/_hello.scss";
