@@ -412,17 +412,20 @@ img {
 }
 
 /* ------------ */
-/*html {
-    font-size: $baseFontSize;   
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
 
-    @include tablets {
-        font-size: $baseFontSize - 1px;
-    }
-
-    @include phones {
-        font-size: $baseFontSize - 2px;
-    }
-}*/
 body {
   font-family: Play;
   font-style: normal;
@@ -910,6 +913,12 @@ address {
 .why__features .why__feature .feature__icon-wrapper .feature__icon {
   width: 4.25rem;
   height: 4.25rem;
+}
+@media screen and (max-width: 480px) {
+  .why__features .why__feature .feature__icon-wrapper .feature__icon {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .why__features .why__feature .feature__icon-wrapper {
