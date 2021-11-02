@@ -515,14 +515,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .hello__container {
-    background: url(../img/beats_solo_3_tablets.png) top 32% center/32% auto no-repeat;
-    padding-bottom: 10%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hello__container {
-    padding: 3.125rem 0;
-    background: url(../img/beats_solo_3_tablets.png) top 25% center/71% auto no-repeat;
+    background: none;
   }
 }
 
@@ -540,13 +533,25 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+}
+
+.hello__pic {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hello__pic {
+    width: 20.1875rem;
+    height: 20.1875rem;
+    display: block;
+    margin-bottom: 3.125rem;
   }
 }
 
