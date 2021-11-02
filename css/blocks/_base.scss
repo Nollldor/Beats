@@ -61,9 +61,10 @@ img {
 
 .container {
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    max-width: rem(1100px);
+    width: min(98%, 1100px);
+    min-height: 100%;
+    padding: rem(24px) 0;
+    
 }
 
 /* ------------ */
@@ -89,16 +90,14 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
-    width: 95%;
-}
-
-section {
+.section {
     height: 100vh;
     min-height: rem(692px);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .wrapper--mainpage {
@@ -125,6 +124,10 @@ section {
 
     @include tablets {
         height: rem(60px);
+    }
+
+    @include phones {
+        line-height: 1.45em;
     }
 }
 

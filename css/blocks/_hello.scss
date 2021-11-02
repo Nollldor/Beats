@@ -1,8 +1,5 @@
-$red: #E01F3D;
-
-.hello {
+.section__hello {
     background: #F5F5F5;
-
 }
 
 .hello__container {
@@ -15,17 +12,17 @@ $red: #E01F3D;
 
     @include tablets {
         background: url(../img/beats_solo_3_tablets.png) top 32% center / 32% auto no-repeat;
+        padding-bottom: 10%;
     }
 
     @include phones {
-        padding-top: rem(32px);
+        padding: rem(50px) 0;
         background: url(../img/beats_solo_3_tablets.png) top 25% center/71% auto no-repeat;
 
     }
 }
 
 .hello__box {
-    padding-top: rem(64px);
     
     @include tablets {
         width: 100%;

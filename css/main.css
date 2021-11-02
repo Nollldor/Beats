@@ -406,9 +406,9 @@ img {
 
 .container {
   margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  max-width: 68.75rem;
+  width: min(98%, 1100px);
+  min-height: 100%;
+  padding: 1.5rem 0;
 }
 
 /* ------------ */
@@ -435,22 +435,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
-  width: 95%;
-}
-
-section {
+.section {
   height: 100vh;
   min-height: 43.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 .wrapper--mainpage {
@@ -481,12 +482,17 @@ section {
     height: 3.75rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .button {
+    line-height: 1.45em;
+  }
+}
 
 .button:hover {
   background: #CA1B36;
 }
 
-.hello {
+.section__hello {
   background: #F5F5F5;
 }
 
@@ -508,18 +514,16 @@ section {
 @media screen and (max-width: 768px) {
   .hello__container {
     background: url(../img/beats_solo_3_tablets.png) top 32% center/32% auto no-repeat;
+    padding-bottom: 10%;
   }
 }
 @media screen and (max-width: 480px) {
   .hello__container {
-    padding-top: 2rem;
+    padding: 3.125rem 0;
     background: url(../img/beats_solo_3_tablets.png) top 25% center/71% auto no-repeat;
   }
 }
 
-.hello__box {
-  padding-top: 4rem;
-}
 @media screen and (max-width: 768px) {
   .hello__box {
     width: 100%;
@@ -752,31 +756,38 @@ address {
 }
 
 .why__container {
-  padding: 6.25rem 0;
+  min-height: 31.25rem;
+}
+@media screen and (max-width: 768px) {
+  .why__container {
+    min-height: 38.75rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .why__container {
-    padding: 2.3125rem 0;
-    width: 100%;
+    padding-bottom: 2.5rem;
+    min-height: 43.75rem;
   }
 }
 
-.why {
-  position: relative;
-}
-.why:before {
+.section__why:before {
   position: absolute;
   content: url("../img/why_before.png");
   top: -1.25rem;
   right: 10%;
   z-index: 10;
 }
-.why:after {
+.section__why:after {
   position: absolute;
   content: url("../img/why_after.png");
   bottom: -1.25rem;
   left: 10%;
   z-index: 10;
+}
+@media screen and (max-width: 480px) {
+  .section__why {
+    min-height: 46.875rem;
+  }
 }
 
 .why__lead {
@@ -972,10 +983,7 @@ address {
   }
 }
 
-.reviews {
-  position: relative;
-}
-.reviews:after {
+.section__reviews:after {
   position: absolute;
   content: url(../img/reviews_after.png);
   left: 10%;
@@ -984,8 +992,6 @@ address {
 }
 
 .reviews__container {
-  padding-top: 4rem;
-  padding-bottom: 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -997,10 +1003,16 @@ address {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  min-height: 35.5625rem;
 }
 @media screen and (max-width: 768px) {
   .reviews__container {
-    padding-top: 15%;
+    min-height: 41rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__container {
+    min-height: 41rem;
   }
 }
 .reviews__container .reviews__title {
@@ -1161,16 +1173,14 @@ address {
 }
 @media screen and (max-width: 480px) {
   .reviews__container:before {
-    -webkit-transform: translate(0%, 12%);
-            transform: translate(0%, 12%);
+    display: none;
   }
 }
 
-.order {
+.section__order {
   background-color: #161616;
-  position: relative;
 }
-.order:before {
+.section__order:before {
   position: absolute;
   content: url("../img/order_before.png");
   top: -1.25rem;
@@ -1189,22 +1199,23 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../img/form_background.png);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(../img/form_background.png) no-repeat;
   color: #fff;
-  padding: 9% 11% 10%;
   position: relative;
 }
 @media screen and (max-width: 768px) {
   .order__container {
     background-position: center;
+    min-height: 40.9375rem;
   }
 }
 @media screen and (max-width: 480px) {
   .order__container {
-    padding-top: 18%;
-    padding-left: 0;
-    padding-right: 0;
     background-position: center;
+    min-height: 40.625rem;
   }
 }
 

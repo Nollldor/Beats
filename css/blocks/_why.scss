@@ -1,17 +1,16 @@
-$gray_font: #666;
-
 .why__container {
-    padding: rem(100px) 0; 
+    min-height: rem(500px);
 
+    @include tablets {
+        min-height:  rem(620px);
+    }
     @include phones {
-        padding: rem(37px) 0;
-        width: 100%;
+        padding-bottom: rem(40px);
+        min-height:  rem(700px);
     }
 }
 
-.why {
-    position: relative;
-
+.section__why {
     &:before {
         position: absolute;
         content: url("../img/why_before.png");
@@ -26,6 +25,10 @@ $gray_font: #666;
         bottom: rem(-20px);
         left: 10%;
         z-index: $decorZ-index;
+    }
+
+    @include phones {
+        min-height:  rem(750px);
     }
 }
 
