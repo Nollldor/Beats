@@ -1185,7 +1185,13 @@ address {
 }
 
 .section__order {
-  background-color: #161616;
+  background: url(../img/form_background.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+@media screen and (max-width: 768px) {
+  .section__order {
+    background-size: 68.75rem 100%;
+  }
 }
 .section__order:before {
   position: absolute;
@@ -1209,7 +1215,6 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url(../img/form_background.png) no-repeat;
   color: #fff;
   position: relative;
 }
