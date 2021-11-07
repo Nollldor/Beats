@@ -154,6 +154,84 @@
                     </ul>
                 </div>
             </section>
+            <section class="section section__slider">
+                <div class="container container__slider">
+                    <div class="slider slider__left">
+                        <a href="" class="slider__link">
+                            <svg class="slider__icon">
+                                <use xlink:href="./img/sprite.svg#slider-left"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="slider slider__center">
+                        <div class="slider__pic-wrapper">
+                            <div class="slider slider__left slider--pic">
+                                <a href="" class="slider__link">
+                                    <svg class="slider__icon">
+                                        <use xlink:href="./img/sprite.svg#slider-left"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <img src="./img/slider__pic.png" alt="" class="slider__pic">
+                            <div class="slider slider__right slider--pic">
+                                <a href="" class="slider__link">
+                                    <svg class="slider__icon">
+                                        <use xlink:href="./img/sprite.svg#slider-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__content">
+                            <div class="content__icon-wrapper">
+                                <svg class="content__icon">
+                                    <use xlink:href="./img/sprite.svg#content-icon"></use>
+                                </svg>
+                            </div>
+                            <h2 class="content__title">beats solo 3. цвет 
+                                «атласное серебро»</h2>
+                            <div class="content__text">
+                                <p>
+                                    Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.
+                                </p>
+                            </div>
+                            <div class="content__features">
+                                <div class="features__feature">
+                                    <div class="feature__title">
+                                        Зарядка
+                                    </div>
+                                    <div class="feature__description">
+                                        2  часа
+                                    </div>
+                                </div>
+                                <div class="features__feature">
+                                    <div class="feature__title">
+                                        Вес
+                                    </div>
+                                    <div class="feature__description">
+                                        215 грамм
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content__order">
+                                <div class="order__price">
+                                    14 990 ₽
+                                </div>
+                                    <a href="#" class="button button--red">ЗАКАЗАТЬ</a>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                    <div class="slider slider__right">
+                        <a href="" class="slider__link">
+                            <svg class="slider__icon">
+                                <use xlink:href="./img/sprite.svg#slider-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
             <section class="section section__reviews">
                 <div class="container reviews__container">
                     <h2 class="reviews__title">
@@ -288,6 +366,41 @@
                     </form>
                 </div>
             </section>
+            <section class="section section__modal">
+               
+                <div class="container container__modal">
+                    <a class="modal__close">   
+                        <svg class="modal__close--icon">
+                            <use xlink:href="./img/sprite.svg#modal-close"></use>
+                        </svg>
+                    </a>
+                    <nav class="modal-menu">
+                        <ul class="modal-menu__list">
+                            <li class="modal-menu__item">
+                                <a href="#" class="modal-menu__link">О нас</a>
+                            </li>
+                            <li class="modal-menu__item">
+                                <a href="#" class="modal-menu__link">Наушники</a>
+                            </li>
+                            <li class="modal-menu__item">
+                                <a href="#" class="modal-menu__link">Команда</a>
+                            </li>
+                            <li class="modal-menu__item">
+                                <a href="#" class="modal-menu__link">Цвета</a>
+                            </li>
+                            <li class="modal-menu__item">
+                                <a href="#" class="modal-menu__link">Отзывы</a>
+                            </li>
+                            <li class="modal-menu__item">
+                                <a href="#" class="modal-menu__link">Как мы работаем</a>
+                            </li>
+                            <li class="modal-menu__item">
+                                <a href="#" class="modal-menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                </div>
+                
+            </section>
         </div>
     </div>
     <nav class="fixed-menu">
@@ -321,5 +434,18 @@
             </li>
         </ul>
     </nav>
+    <script>
+        var modalClose = document.querySelector(".modal__close");
+        var sectionModal = document.querySelector(".section__modal");
+        var hamburger = document.querySelector(".hamburger");
+
+        modalClose.addEventListener("mousedown", function(){
+            sectionModal.style.display = "none";
+        });
+        
+        hamburger.addEventListener("mousedown", function(){
+            sectionModal.style.display = "flex";
+        });
+    </script>
 </body>
 </html>
