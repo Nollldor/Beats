@@ -1187,13 +1187,13 @@ address {
 }
 .team__title:after {
   position: absolute;
-  content: url("../../img/team-button-dawn.png");
+  content: url("../img/team-button-dawn.png");
   -webkit-transform: translate(47%, -13%);
           transform: translate(47%, -13%);
 }
 
 .team__item.active .team__title:after {
-  content: url("../../img/team-button-up.png");
+  content: url("../img/team-button-up.png");
 }
 
 .section__slider {
