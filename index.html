@@ -237,33 +237,65 @@
                     <h2 class="reviews__title">
                         отзывы
                     </h2>
-                    <div class="reviews__review">
-                        <img src="./img/reviews_photo_BilliAylish.png" alt="Билли Айлиш" class="review__photo">
-                        <div class="review__text">
-                            <h3 class="review__title">Отличный звук</h3>
-                            <div class="review__desc">
+                    <ul class="review__list">
+                        <li class="review__item active" data-linked-with="one"></li>
+                            <div class="reviews__review">
+                                <img src="./img/reviews_photo_BilliAylish.png" alt="Билли Айлиш" class="review__photo">
+                                <div class="review__text">
+                                    <h3 class="review__title">Отличный звук</h3>
+                                    <div class="review__desc">
                                 
-                                    Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. 
-                                    В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. 
-                                    А батончик – он всегда под рукой. Это приятно и удобно. 
+                                            Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы.
+                                            В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить.
+                                            А батончик – он всегда под рукой. Это приятно и удобно.
                                 
+                                    </div>
+                                    <div class="review__signature">Билли Айлиш</div>
+                                </div>
                             </div>
-                            <div class="review__signature">Билли Айлиш</div>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="review__item" data-linked-with="two">
+                            <div class="reviews__review">    
+                                <img src="./img/reviews_photo_VadimGrachev.png" alt="Вадим Грачев" class="review__photo">
+                                <div class="review__text">
+                                    <h3 class="review__title">Крутой дизайн</h3>
+                                    <div class="review__desc">
+                                
+                                        После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт. 
+                                
+                                    </div>
+                                    <div class="review__signature">Вадим Грачев</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="review__item" data-linked-with="three">
+                            <div class="reviews__review">
+                                <img src="./img/reviews_photo_MaryaOrlova.png" alt="Мария Орлова" class="review__photo">
+                                <div class="review__text">
+                                    <h3 class="review__title">На долго хватает заряда</h3>
+                                    <div class="review__desc">
+                                
+                                        Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.
+                                
+                                    </div>
+                                    <div class="review__signature">Мария Орлова</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                     <ul class="reviews__pager">
-                        <li class="pager__item">
-                            <a href="#" class="pager__link">
+                        <li class="pager__item active">
+                            <a href="#" class="pager__link"  data-open="one">
                                 <img src="./img/reviews_pager_icon_1.png" alt="" class="pager__icon">
                             </a>
                         </li>
                         <li class="pager__item">
-                            <a href="#" class="pager__link">
+                            <a href="#" class="pager__link" data-open="two">
                                 <img src="./img/reviews_pager_icon_2.png" alt="" class="pager__icon">
                             </a>
                         </li>
                         <li class="pager__item">
-                            <a href="#" class="pager__link">
+                            <a href="#" class="pager__link"  data-open="three">
                                 <img src="./img/reviews_pager_icon_3.png" alt="" class="pager__icon">
                             </a>
                         </li>
@@ -434,18 +466,8 @@
             </li>
         </ul>
     </nav>
-    <script>
-        var modalClose = document.querySelector(".modal__close");
-        var sectionModal = document.querySelector(".section__modal");
-        var hamburger = document.querySelector(".hamburger");
-
-        modalClose.addEventListener("mousedown", function(){
-            sectionModal.style.display = "none";
-        });
-        
-        hamburger.addEventListener("mousedown", function(){
-            sectionModal.style.display = "flex";
-        });
-    </script>
+    <script src="./js/hamburger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/review-slideshow.js"></script>
 </body>
 </html>

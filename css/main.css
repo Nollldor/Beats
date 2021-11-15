@@ -1414,14 +1414,12 @@ address {
 .reviews__container .reviews__pager .pager__item .pager__icon {
   border: 0.25rem solid #fff;
   border-radius: 6.5625rem;
-  -webkit-transition: border-color 0.3s;
-  transition: border-color 0.3s;
-}
-.reviews__container .reviews__pager .pager__item .pager__icon:hover {
-  border-color: #E01F3D;
 }
 .reviews__container .reviews__pager .pager__item:last-child {
   margin-right: 0;
+}
+.reviews__container .reviews__pager .pager__item.active .pager__icon {
+  border-color: red;
 }
 .reviews__container:before {
   position: absolute;
@@ -1434,6 +1432,21 @@ address {
   .reviews__container:before {
     display: none;
   }
+}
+
+.review__list {
+  position: relative;
+}
+
+.review__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.review__item.active {
+  opacity: 1;
 }
 
 .section__order {

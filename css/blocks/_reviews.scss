@@ -140,18 +140,22 @@
 
             .pager__icon{
                 border: rem(4px) solid #fff;
-                border-radius: rem(105px);
-                transition: border-color 0.3s;
-
-                &:hover {
-                    border-color: #E01F3D;
-                }
+                border-radius: rem(105px);             
             }
+
 
             &:last-child {
                 margin-right: 0;
             }
+
+            &.active {
+                .pager__icon {
+                    border-color: red;
+                }
+            }
         }
+
+
     }
 
     &:before {
@@ -164,4 +168,19 @@
             display: none;
         }
     }
+}
+
+.review__list {
+    position: relative;
+}
+.review__item {
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+
+}
+
+.review__item.active {
+    opacity: 1;
 }
