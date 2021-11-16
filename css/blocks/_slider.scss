@@ -1,13 +1,20 @@
 .section__slider {
     background: #F8FAF9;
+    
+    @include tablets {
+        min-height: rem(816px);
+    }
 
     .bx-wrapper{
         border: 0;
         background: transparent;
         box-shadow: none;
         height: rem(485px);
-        //max-width: 96%; 
         margin-bottom: 0;
+        
+        @include tablets {
+            min-height: rem(616px);
+        }
     }
 }
 
@@ -95,14 +102,14 @@
     @include tablets {
         position: absolute;   
         left: 15%;
-        top: 40%;
+        top: 30%;
         z-index: 10;
     }
 
     @include phones {
         position: absolute;   
         left: 5%;
-        top: 40%;
+        top: 30%;
         z-index: 10;
     }
 }
@@ -111,13 +118,13 @@
     @include tablets {
         position: absolute;  
         right: 15%;   
-        top: 40%;
+        top: 30%;
     }
 
     @include phones {
         position: absolute;   
         right: 5%;
-        top: 40%;
+        top: 30%;
         z-index: 10;
     }
 }
