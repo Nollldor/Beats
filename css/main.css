@@ -1199,6 +1199,14 @@ address {
 .section__slider {
   background: #F8FAF9;
 }
+.section__slider .bx-wrapper {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 30.3125rem;
+  margin-bottom: 0;
+}
 
 .container__slider {
   display: -webkit-box;
@@ -1207,6 +1215,9 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (max-width: 768px) {
   .container__slider {
@@ -1224,7 +1235,7 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 4.625rem;
+  min-width: 2%;
 }
 @media screen and (max-width: 480px) {
   .slider {
@@ -1265,9 +1276,9 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .slider__center {
@@ -1292,7 +1303,7 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 3.125rem;
+  padding-left: 4%;
 }
 @media screen and (max-width: 768px) {
   .slider__content {
@@ -1310,9 +1321,35 @@ address {
 }
 
 @media screen and (max-width: 768px) {
-  .slider__left,
-.slider__right {
-    display: none;
+  .slider__left {
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    z-index: 10;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__left {
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    z-index: 10;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider__right {
+    position: absolute;
+    right: 15%;
+    top: 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__right {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    z-index: 10;
   }
 }
 
@@ -1435,6 +1472,8 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
 }
 
 .slider--pic {
@@ -1446,6 +1485,10 @@ address {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.slider__center-wrapper {
+  width: 96%;
 }
 
 .section__reviews:after {
