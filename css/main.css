@@ -1730,7 +1730,7 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 0.9375rem;
+  padding-top: 2.9375rem;
   padding-bottom: 3.9375rem;
 }
 .reviews__container .reviews__pager .pager__item {
