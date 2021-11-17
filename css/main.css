@@ -1501,6 +1501,74 @@ address {
   width: 96%;
 }
 
+.content__icon-wrapper {
+  cursor: pointer;
+  position: relative;
+}
+.content__icon-wrapper:hover .content__icon-info {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__icon-info {
+  position: absolute;
+  width: 17.0625rem;
+  height: 18.375rem;
+  top: 0%;
+  left: 100%;
+  background: #d5d5d5;
+  border-radius: 4px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  padding: 1.75rem 1.5625rem 2.125rem 1.875rem;
+  display: none;
+}
+.content__icon-info .info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content__icon-info .info__list .info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content__icon-info .info__list .info__item .info__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.875rem;
+}
+.content__icon-info .info__list .info__item .info__description {
+  width: 7.9375rem;
+  height: 1.5rem;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.33em;
+}
+.content__icon-info .info__list .info__item .info__value {
+  width: 3.3125rem;
+  height: 1.5rem;
+  text-align: right;
+  font-size: 1rem;
+  line-height: 1.33em;
+}
+
 .section__reviews:after {
   position: absolute;
   content: url(../img/reviews_after.png);
