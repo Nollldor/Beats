@@ -1,5 +1,5 @@
 .modal {
-    //display: none;
+    display: none;
 
     &.error-modal {
         .modal__content {
@@ -31,4 +31,9 @@
 .modal__content {
     margin-bottom: 15px;
     color: #000;
+    text-align: center;
+
+    &.modal-error {
+        color: red;
+    }
 }

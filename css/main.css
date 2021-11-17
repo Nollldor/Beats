@@ -2107,6 +2107,10 @@ address {
   margin-right: 0;
 }
 
+.input-error {
+  border-color: #E01F3D;
+}
+
 .fixed-menu {
   position: fixed;
   top: 35%;
@@ -2221,6 +2225,9 @@ address {
   color: #E01F3D;
 }
 
+.modal {
+  display: none;
+}
 .modal.error-modal .modal__content {
   color: red;
 }
@@ -2255,4 +2262,8 @@ address {
 .modal__content {
   margin-bottom: 15px;
   color: #000;
+  text-align: center;
+}
+.modal__content.modal-error {
+  color: red;
 }
