@@ -69,3 +69,9 @@
 .horizontal-menu__title--red {
     background: #E01F3C;
 }
+
+.horizontal-menu__item.not-active {
+    .horizontal-menu__title {
+        display: none;
+    }
+}

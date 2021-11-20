@@ -1647,6 +1647,10 @@ address {
   background: #E01F3C;
 }
 
+.horizontal-menu__item.not-active .horizontal-menu__title {
+  display: none;
+}
+
 .section__reviews:after {
   position: absolute;
   content: url(../img/reviews_after.png);
