@@ -1,3 +1,6 @@
+.container__horizontal-menu {
+    display: flex;
+}
 .section__horizontal-menu {
     position: relative;
     background: url("../img/horizontal-menu-back.png") center center/cover no-repeat;
@@ -73,5 +76,22 @@
 .horizontal-menu__item.not-active {
     .horizontal-menu__title {
         display: none;
+    }
+}
+
+.horizontal-menu-section__title {
+    margin-top: 14%;
+    margin-left: 10%;
+    font-family: Play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: rem(48px);
+    line-height: 1.08em;
+    text-transform: uppercase;
+
+    @include phones {
+        margin-left: 1%;
+        font-size: rem(32px);
+        line-height: 1.12em;
     }
 }
