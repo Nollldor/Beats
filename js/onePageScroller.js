@@ -89,13 +89,14 @@ $("[data-scroll-to]").on("click", e => {
 
 //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
 
-$("body").swipe( {
-    swipe:function(event, direction) {
+$("body").swipe({
+    swipe: function (event, direction) {
         if(direction == "up"){
             scrollViewport("next");
         }
         if(direction == "down"){
             scrollViewport("prev");
         }
+        alert(direction);
     }
   });
