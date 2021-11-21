@@ -436,8 +436,7 @@ body {
 }
 
 .section {
-  height: 100vh;
-  min-height: 43.25rem;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -772,18 +771,9 @@ address {
   border-radius: 5px;
 }
 
-.why__container {
-  min-height: 31.25rem;
-}
-@media screen and (max-width: 768px) {
-  .why__container {
-    min-height: 38.75rem;
-  }
-}
 @media screen and (max-width: 480px) {
   .why__container {
     padding-bottom: 2.5rem;
-    min-height: 43.75rem;
   }
 }
 
@@ -801,12 +791,6 @@ address {
   left: 10%;
   z-index: 10;
 }
-@media screen and (max-width: 480px) {
-  .section__why {
-    min-height: 46.875rem;
-  }
-}
-
 .why__lead {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1002,11 +986,6 @@ address {
 
 .section__slider {
   background: #F8FAF9;
-}
-@media screen and (max-width: 768px) {
-  .section__slider {
-    min-height: 51rem;
-  }
 }
 .section__slider .bx-wrapper {
   border: 0;

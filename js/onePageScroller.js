@@ -89,13 +89,7 @@ $("[data-scroll-to]").on("click", e => {
 
 //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
 
-$("body").swipe( {
-    //Generic swipe handler for all directions
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      $(this).text("You swiped " + direction );  
-    }
-});
-/*$("body").swipe({
+$("body").swipe({
     swipe: function (event, direction) {
         if(direction == "up"){
             scrollViewport("next");
@@ -103,6 +97,5 @@ $("body").swipe( {
         if(direction == "down"){
             scrollViewport("prev");
         }
-        alert(direction);
     }
-  });*/
+  });

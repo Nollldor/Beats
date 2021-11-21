@@ -1,12 +1,12 @@
 .why__container {
-    min-height: rem(500px);
+   // min-height: rem(500px);
 
     @include tablets {
-        min-height:  rem(620px);
+        //min-height:  rem(620px);
     }
     @include phones {
         padding-bottom: rem(40px);
-        min-height:  rem(700px);
+       // min-height:  rem(700px);
     }
 }
 
@@ -28,7 +28,7 @@
     }
 
     @include phones {
-        min-height:  rem(750px);
+       // min-height:  rem(750px);
     }
 }
 
