@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <link rel="stylesheet" href="./css/main.css">
 <body>
-    <div class="wrapper wrapper--mainpage">
-        <div class="wrapper__content">
-            <section class="section section__hello">
+    <div class="wrapper">
+        <div class="maincontent">
+            <section data-sidemenu="normal" data-section-id="hello" class="section section__hello">
                 <div class="container hello__container">
                     <header class="header">
                         <a class="logo" href="#">
@@ -20,25 +20,25 @@
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">О нас</a>
+                                    <a href="#" data-scroll-to="why" class="menu__link">О нас</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Наушники</a>
+                                    <a href="#" data-scroll-to="slider" class="menu__link">Наушники</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Команда</a>
+                                    <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Цвета</a>
+                                    <a href="#" data-scroll-to="horizontal-menu" class="menu__link">Цвета</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Отзывы</a>
+                                    <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Как мы работаем</a>
+                                    <a href="#" data-scroll-to="video" class="menu__link">Как мы работаем</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Контакты</a>
+                                    <a href="#" data-scroll-to="map" class="menu__link">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -63,7 +63,7 @@
                                     из линейки Powerbeats.
                                 </p>
                             </div>
-                            <a href="#" class="button button--red">ЗАКАЗАТЬ</a>
+                            <a href="#" data-scroll-to="order" class="button button--red">ЗАКАЗАТЬ</a>
                         
                     </div>
                         <div class="hello__properties">
@@ -96,7 +96,7 @@
                         </div>
                 </div>
             </section>
-            <section class="section section__why">
+            <section data-sidemenu="normal" data-section-id="why" class="section section__why">
                 <div class="container why__container">
                     <div class="why__lead">
                         <h2 class="lead__title">почему beats solo 3?</h2>
@@ -156,7 +156,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section section__slider">
+            <section data-sidemenu="normal" data-section-id="slider" class="section section__slider">
                 <div class="container container__slider">
                     <div class="slider slider__left">
                         <a href="#" class="slider__link">
@@ -257,7 +257,7 @@
                                             <div class="order__price">
                                                 14 990 ₽
                                             </div>
-                                                <a href="#" class="button button--red">ЗАКАЗАТЬ</a>
+                                                <a href="#" data-scroll-to="order" class="button button--red">ЗАКАЗАТЬ</a>
                                         </div>
                         
                                     </div>
@@ -352,7 +352,7 @@
                                             <div class="order__price">
                                                 14 990 ₽
                                             </div>
-                                                <a href="#" class="button button--red">ЗАКАЗАТЬ</a>
+                                                <a href="#" data-scroll-to="order" class="button button--red">ЗАКАЗАТЬ</a>
                                         </div>
                         
                                     </div>
@@ -369,7 +369,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section__team">
+            <section data-sidemenu="normal" data-section-id="team" class="section section__team">
                 <div class="container team__container">
                     <h2 class="section__title">Команда</h2>
                     <ul class="team team--desktop">
@@ -506,7 +506,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section section__horizontal-menu">
+            <section data-sidemenu="white" data-section-id="horizontal-menu" class="section section__horizontal-menu">
                 <div class="container container__horizontal-menu">
                     <a class="horizontal-menu-section__title">Цвета</a>
                     <ul class="horizontal-menu">
@@ -562,7 +562,7 @@
                 </div>
 
             </section>     
-            <section class="section section__reviews">
+            <section data-sidemenu="normal" data-section-id="reviews" class="section section__reviews">
                 <div class="container reviews__container">
                     <h2 class="reviews__title">
                         отзывы
@@ -632,7 +632,14 @@
                     </ul>
                 </div>
             </section>
-            <section class="section section__order">
+            <section data-sidemenu="normal" data-section-id="video" class="section section__video">
+                <div class="container video__container">
+                    <div class="video__title">
+                        как мы работаем
+                    </div>
+                </div>
+            </section>
+            <section data-sidemenu="white" data-section-id="order" class="section section__order">
                 <div class="container order__container">
                     <h2 class="order__title">закажите доставку</h2>
                     <form action="" class="form">
@@ -729,72 +736,77 @@
                     </form>
                 </div>
             </section>
-            <section class="section section__modal">
-               
-                <div class="container container__modal">
-                    <a class="modal__close">   
-                        <svg class="modal__close--icon">
-                            <use xlink:href="./img/sprite.svg#modal-close"></use>
-                        </svg>
-                    </a>
-                    <nav class="modal-menu">
-                        <ul class="modal-menu__list">
-                            <li class="modal-menu__item">
-                                <a href="#" class="modal-menu__link">О нас</a>
-                            </li>
-                            <li class="modal-menu__item">
-                                <a href="#" class="modal-menu__link">Наушники</a>
-                            </li>
-                            <li class="modal-menu__item">
-                                <a href="#" class="modal-menu__link">Команда</a>
-                            </li>
-                            <li class="modal-menu__item">
-                                <a href="#" class="modal-menu__link">Цвета</a>
-                            </li>
-                            <li class="modal-menu__item">
-                                <a href="#" class="modal-menu__link">Отзывы</a>
-                            </li>
-                            <li class="modal-menu__item">
-                                <a href="#" class="modal-menu__link">Как мы работаем</a>
-                            </li>
-                            <li class="modal-menu__item">
-                                <a href="#" class="modal-menu__link">Контакты</a>
-                            </li>
-                        </ul>
+            <section data-sidemenu="normal" data-section-id="map" class="section section__map">
+                <div class="container map__container">
+                    map
                 </div>
-                
             </section>
             
         </div>
+        <section class="section section__modal">
+               
+            <div class="container container__modal">
+                <a class="modal__close">   
+                    <svg class="modal__close--icon">
+                        <use xlink:href="./img/sprite.svg#modal-close"></use>
+                    </svg>
+                </a>
+                <nav class="modal-menu">
+                    <ul class="modal-menu__list">
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">О нас</a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">Наушники</a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">Команда</a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">Цвета</a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">Отзывы</a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">Как мы работаем</a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+            </div>
+            
+        </section>
     </div>
     <nav class="fixed-menu">
         <ul class="fixed-menu__list">
             <li class="fixed-menu__item fixed-menu__item--active">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#" data-scroll-to="hello" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#" data-scroll-to="why" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#" data-scroll-to="slider" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#" data-scroll-to="team" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#" data-scroll-to="horizontal-menu" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#" data-scroll-to="reviews" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#" data-scroll-to="video" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#" data-scroll-to="order" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
-                <a href="" class="fixed-menu__link"></a>
+                <a href="#" data-scroll-to="map" class="fixed-menu__link"></a>
             </li>
         </ul>
     </nav>
@@ -815,5 +827,7 @@
     <script src="./js/modal.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="./js/horizontal-acco.js"></script>
+    <script src="./js/onePageScroller.js"></script>
+    <script src="./js/jquery.touchSwipe.min.js"></script>
 </body>
 </html>

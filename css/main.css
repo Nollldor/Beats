@@ -454,9 +454,19 @@ body {
   position: relative;
 }
 
-.wrapper--mainpage {
+.wrapper {
   color: #292929;
   overflow: hidden;
+  height: 100%;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .button {
@@ -2265,6 +2275,16 @@ address {
   .fixed-menu {
     display: none;
   }
+}
+
+.fixed-menu.fixed-menu--white .fixed-menu__link:before {
+  background: #fff;
+}
+.fixed-menu.fixed-menu--white .fixed-menu__item--active .fixed-menu__link {
+  border-color: #fff;
+}
+.fixed-menu.fixed-menu--white .fixed-menu__item--active .fixed-menu__link::before {
+  background: #fff;
 }
 
 .section__modal {

@@ -48,3 +48,20 @@
         display: none;  
     }
 }
+
+.fixed-menu.fixed-menu--white{
+    .fixed-menu__link{
+        &:before{
+            background:#fff;
+        }
+    }
+
+    .fixed-menu__item--active .fixed-menu__link {
+        border-color: #fff;
+    }
+
+    .fixed-menu__item--active .fixed-menu__link::before {
+        background: #fff;
+    }
+
+}
