@@ -94,6 +94,7 @@ $("body").swipe( {
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
       $(this).text("You swiped " + direction );  
     }
+});
 /*$("body").swipe({
     swipe: function (event, direction) {
         if(direction == "up"){
