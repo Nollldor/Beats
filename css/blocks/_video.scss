@@ -1,0 +1,191 @@
+.video__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .video__title {
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: rem(48px);
+        line-height: 1.08em;
+        margin-bottom: rem(44px);
+
+        @include phones {
+            font-size: rem(32px);
+            line-height: 1.12em;
+        }
+    }
+}
+
+.player{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    &__wrapper {
+        width: 662px;
+        height: 392px;
+
+        @include tablets {
+            width: 594px;
+            height: 352px;
+        }
+
+        @include phones {
+            width: 394px;
+            height: 233px;
+        }
+    }
+
+    &__splash {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../img/video__splash.png) center center/cover no-repeat;
+        cursor: pointer;
+    }
+
+    &__controls{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: rem(35px);
+        background: #151515;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 rem(25px);
+    }
+
+    &.active .player__splash {
+        display: none;
+    }
+
+    &__start {
+        border: none;
+        position: relative;
+        &:before{
+            content: url("../img/play.png");
+                display: block;
+                position: absolute;
+                width: rem(12px);
+                top: 50%; 
+                left: 50%;                        
+                transform: translate(-50%, -50%);
+        }
+    }
+    &.paused {
+        .player__start{
+            &:before {
+                content: url(../img/pause.png);
+            }
+        }
+
+    }
+
+    &__playback {
+        height: 16px;
+        width: 446px;
+        position: relative;
+        
+        @include tablets {
+            width: 397px;
+        }
+
+        @include phones {
+            width: 263px;
+        }
+
+        &-button {
+            background: #E01F3D;
+            border-radius: 50px;
+            border: none;
+            width: 12px;
+            height: 12px;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 0;
+        }
+
+        &:before {
+            content:"";
+            height: 4px;
+            position: absolute;
+            top: 50%;
+            left:0;
+            right: 0;
+            background: #333333;
+            display: block;
+            transform: translateY((-50%));
+            cursor: pointer;
+        }
+    }
+
+    &__volume {
+        height: 16px;
+        width: 60px;
+        position: relative;
+
+        @include tablets {
+            width: 54px;
+        }
+
+        @include phones {
+            width: 32px;
+        }
+        
+
+        &-button {
+            background: #E01F3D;
+            border-radius: 50px;
+            border: none;
+            width: 12px;
+            height: 12px;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 100%;
+            z-index: 10;
+        }
+
+        &:before {
+            content: url("../img/player__volume.png");
+            display: block;
+            position: absolute;
+            width: rem(12px);
+            top: 50%; 
+            left: 0;                        
+            transform: translate(-220%, -50%);
+        }
+
+        &:after {
+            content:"";
+            height: 4px;
+            position: absolute;
+            top: 50%;
+            left:0;
+            right: 0;
+            background: #333333;
+            display: block;
+            transform: translateY((-50%));
+            cursor: pointer;
+            
+        }
+    }
+}
+
+
+.player__duration {
+    color: #fff;
+}
