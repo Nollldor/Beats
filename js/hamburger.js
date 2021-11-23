@@ -1,3 +1,7 @@
+const modalClose = document.querySelector(".modal__close");
+const sectionModal = document.querySelector(".section__modal");
+const hamburger = document.querySelector(".hamburger");
+
 $(".modal-menu__link").on("click", e => {
     sectionModal.style.display = "none";
     document.body.style.overflow = "";
