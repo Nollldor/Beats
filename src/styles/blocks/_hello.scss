@@ -1,0 +1,113 @@
+.section__hello {
+    background: #F5F5F5;
+}
+
+.hello__container {
+    padding: rem(24px) 0 rem(45px) 0;
+    background: url(../../img/beats_solo_3.png) right center / 50% auto no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    @include tablets {
+        background: none;
+    }
+}
+
+.hello__box {
+    
+    @include tablets {
+        width: 100%;
+        height: 25%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.hello__pic {
+    display: none;
+
+    @include tablets {
+        width: rem(323px);
+        height: rem(323px);
+        display: block;
+        margin-bottom: rem(50px);
+    }
+}
+
+.hello__title {
+    width: 46%;
+    font-family: Play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: rem(48px);
+    line-height: 1.08em;
+    text-transform: uppercase;
+    margin-bottom: rem(20px);
+
+    @include tablets {
+        width: 80%;
+        margin-bottom: rem(5px);
+    }
+
+    @include phones {
+        font-size: rem(32px);
+        margin-bottom: rem(20px);
+    }
+}
+
+.hello__description {
+    width: 40%;
+    font-family: Alegreya Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(21px);
+    line-height: 1.19em;
+    margin-bottom: rem(53px);
+
+    @include tablets {
+        margin-bottom: rem(23px);
+        width: 50%;
+    }
+
+    @include phones {
+        font-size: rem(21px);
+        line-height: 1.11em;
+        width: 73%;
+    }
+}
+
+.properties__list,
+.properties__item {
+    display: flex;
+}
+
+.properties__item {
+    margin-right: rem(3px);
+}
+
+.properties__icon {
+    width: rem(52px);
+    height: rem(52px);
+    margin-right: rem(20px);
+}
+.properties__property {
+    width: rem(114px);
+    height: rem(36px);
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(16px);
+    line-height: 1.12em;
+}
+
+.hello__properties {
+    @include tablets {
+        display: none;
+    }
+}
