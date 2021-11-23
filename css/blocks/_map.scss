@@ -1,0 +1,122 @@
+.map__container {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.map {
+    width: 100%;
+    height: 85%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(90%, 1100px);
+    height: 15%;
+
+    @include phones {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+
+    &__address {
+        font-family: Play;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rem(18px);
+        line-height: 1.33em;
+        margin-bottom: rem(3px);
+
+        @include phones {
+            margin-bottom: rem(12px);
+        }
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        transition: color 0.3s;
+        
+        &:hover {
+            color: $red;
+        }
+
+        @include phones {
+            justify-content: center;
+            margin-bottom: rem(19px);
+        }
+        
+    }
+
+    &__phone--icon {
+        width: rem(14px);
+        height: rem(14px);
+        margin-right: rem(7px);
+    }
+
+    &__phone--number {
+        font-family: Play;
+        font-style: normal;
+        font-weight: normal;
+        font-size: rem(18px);
+        line-height: 1.17em;
+    }
+
+}
+
+.footer .socials {
+    width: rem(174px);
+    justify-content: space-between;
+    display: flex;
+}
+
+.socials__item{
+    display: flex;
+    margin-right: rem(10px);
+}
+
+.socials__item:last-child {
+   margin-right: 0px;
+}
+
+.socials__link {
+    width: 36px;
+    height: 36px;
+}
+
+.socials__link--telegram {
+    background: url('../img/social_sprites.png') -66px -66px;
+}
+
+.socials__link--telegram:hover {
+    background: url('../img/social_sprites.png') -122px -66px;
+}
+
+.socials__link--vk {
+    background: url('../img/social_sprites.png') -10px -122px;
+}
+
+.socials__link--vk:hover {
+    background: url('../img/social_sprites.png') -66px -122px;
+}
+
+.socials__link--facebook {
+    background: url('../img/social_sprites.png') -10px -10px;
+}
+
+.socials__link--facebook:hover {
+    background: url('../img/social_sprites.png') -66px -10px;
+}
+
+.socials__link--inst {
+    background: url('../img/social_sprites.png') -10px -66px;
+}
+
+.socials__link--inst:hover {
+    background: url('../img/social_sprites.png') -122px -10px;
+}
