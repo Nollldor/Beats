@@ -16,6 +16,7 @@ $phones: 480px;
 //media
 @import "_media.scss";
 
+//@import "./blocks/*.scss";
 //base
 
 @import "./blocks/_normalize.scss";
@@ -36,4 +37,3 @@ $phones: 480px;
 @import "./blocks/_fixed-menu.scss";
 @import "./blocks/_modal-menu.scss";
 @import "./blocks/_modal.scss";
-

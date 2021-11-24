@@ -1,5 +1,8 @@
+@use "sass:math";
+
 @function rem($px) {
-    @return ($px/$baseFontSize) + 0rem; 
+    //@return ($px/$baseFontSize) + 0rem; 
+    @return math.div($px, $baseFontSize) * 1rem;
 }
 
 @mixin tablets {

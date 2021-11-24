@@ -1,6 +1,9 @@
 const sections = $("section");
 const display = $(".maincontent");
 
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isPhone = mobileDetect.mobile();
+
 let inSroll = false;
 
 sections.first().addClass("active");
@@ -61,20 +64,23 @@ $(window).on("wheel", e => {
     }
 });
 
-$(window).on("keydown", e => {
-    const tagName = e.target.tagName.toLowerCase();
+$(window).on("keydown", (e) => {
 
-    if (tagName != "input" && tagName != "textarea") {
-        switch(e.keyCode){
-            case 38: //prev
+    const tagName = e.target.tagName.toLowerCase();
+    const userTypingInInputs = tagName == "input" || tagName == "textarea";
+
+    if (userTypingInInputs) return;
+
+    switch(e.keyCode){
+        case 38: //prev
             scrollViewport("prev");
             break;
     
-            case 40: //next
+        case 40: //next
             scrollViewport("next");
             break;
-        }
     }
+    
 });
 
 $("[data-scroll-to]").on("click", e => {
@@ -89,13 +95,17 @@ $("[data-scroll-to]").on("click", e => {
 
 //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
 
-$("body").swipe({
-    swipe: function (event, direction) {
-        if(direction == "up"){
-            scrollViewport("next");
+$(".wrapper").on("touchmove", e => e.preventDefault());
+
+if(isPhone) {
+    $("body").swipe({
+        swipe: function (event, direction) {
+            if(direction == "up"){
+                scrollViewport("next");
+            }
+            if(direction == "down"){
+                scrollViewport("prev");
+            }
         }
-        if(direction == "down"){
-            scrollViewport("prev");
-        }
-    }
-  });
+    });
+}
