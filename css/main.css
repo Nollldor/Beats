@@ -509,7 +509,7 @@ body {
 
 .hello__container {
   padding: 1.5rem 0 2.8125rem 0;
-  background: url(../../img/beats_solo_3.png) right center/50% auto no-repeat;
+  background: url(../img/beats_solo_3.png) right center/50% auto no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,14 +794,14 @@ address {
 
 .section__why:before {
   position: absolute;
-  content: url("../../img/why_before.png");
+  content: url("../img/why_before.png");
   top: -1.25rem;
   right: 10%;
   z-index: 10;
 }
 .section__why:after {
   position: absolute;
-  content: url("../../img/why_after.png");
+  content: url("../img/why_after.png");
   bottom: -1.25rem;
   left: 10%;
   z-index: 10;
@@ -910,7 +910,7 @@ address {
 }
 .why__features .why__feature:after {
   position: absolute;
-  content: url(../../img/why_feature_split.png);
+  content: url(../img/why_feature_split.png);
   top: 20%;
   left: 93%;
 }
@@ -935,7 +935,7 @@ address {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1.5rem;
-  background: url(../../img/why_icon_back.png) center center/95% no-repeat;
+  background: url(../img/why_icon_back.png) center center/95% no-repeat;
 }
 .why__features .why__feature .feature__icon-wrapper .feature__icon {
   width: 4.25rem;
@@ -1369,7 +1369,7 @@ address {
 
 .section__team:before {
   position: absolute;
-  content: url("../../img/team_before.png");
+  content: url("../img/team_before.png");
   top: -1.25rem;
   right: 10%;
   z-index: 10;
@@ -1564,13 +1564,13 @@ address {
 }
 .team__title:after {
   position: absolute;
-  content: url("../../img/team-button-dawn.png");
+  content: url("../img/team-button-dawn.png");
   -webkit-transform: translate(47%, -13%);
           transform: translate(47%, -13%);
 }
 
 .team__item.active .team__title:after {
-  content: url("../../img/team-button-up.png");
+  content: url("../img/team-button-up.png");
 }
 
 .container__horizontal-menu {
@@ -1581,7 +1581,7 @@ address {
 
 .section__horizontal-menu {
   position: relative;
-  background: url("../../img/horizontal-menu-back.png") center center/cover no-repeat;
+  background: url("../img/horizontal-menu-back.png") center center/cover no-repeat;
   color: #fff;
 }
 
@@ -1681,7 +1681,7 @@ address {
 
 .section__reviews:after {
   position: absolute;
-  content: url(../../img/reviews_after.png);
+  content: url(../img/reviews_after.png);
   left: 10%;
   bottom: -1.25rem;
   z-index: 10;
@@ -1860,7 +1860,7 @@ address {
 }
 .reviews__container:before {
   position: absolute;
-  content: url(../../img/reviews_before.png);
+  content: url(../img/reviews_before.png);
   -webkit-transform: translate(0%, 34%);
           transform: translate(0%, 34%);
   z-index: 1;
@@ -1964,7 +1964,7 @@ address {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../../img/video__splash.png) center center/cover no-repeat;
+  background: url(../img/video__splash.png) center center/cover no-repeat;
   cursor: pointer;
 }
 .player__controls {
@@ -1993,7 +1993,7 @@ address {
   position: relative;
 }
 .player__start:before {
-  content: url("../../img/play.png");
+  content: url("../img/play.png");
   display: block;
   position: absolute;
   width: 0.75rem;
@@ -2003,7 +2003,7 @@ address {
           transform: translate(-50%, -50%);
 }
 .player.paused .player__start:before {
-  content: url(../../img/pause.png);
+  content: url(../img/pause.png);
 }
 .player__playback {
   height: 1rem;
@@ -2076,7 +2076,7 @@ address {
   z-index: 10;
 }
 .player__volume:before {
-  content: url("../../img/player__volume.png");
+  content: url("../img/player__volume.png");
   display: block;
   position: absolute;
   width: 0.75rem;
@@ -2104,7 +2104,7 @@ address {
 }
 
 .section__order {
-  background: url(../../img/form_background.png) center center no-repeat;
+  background: url(../img/form_background.png) center center no-repeat;
   background-size: 100% 100%;
 }
 @media screen and (max-width: 768px) {
@@ -2114,7 +2114,7 @@ address {
 }
 .section__order:before {
   position: absolute;
-  content: url("../../img/order_before.png");
+  content: url("../img/order_before.png");
   top: -1.25rem;
   right: 10%;
   z-index: 10;
@@ -2390,7 +2390,7 @@ address {
 }
 
 .check__elem:checked ~ .check__button .check__button-checked {
-  background: url("../../img/check_check.png");
+  background: url("../img/check_check.png");
 }
 
 @media screen and (max-width: 768px) {
@@ -2556,35 +2556,35 @@ address {
 }
 
 .socials__link--telegram {
-  background: url("../../img/social_sprites.png") -66px -66px;
+  background: url("../img/social_sprites.png") -66px -66px;
 }
 
 .socials__link--telegram:hover {
-  background: url("../../img/social_sprites.png") -122px -66px;
+  background: url("../img/social_sprites.png") -122px -66px;
 }
 
 .socials__link--vk {
-  background: url("../../img/social_sprites.png") -10px -122px;
+  background: url("../img/social_sprites.png") -10px -122px;
 }
 
 .socials__link--vk:hover {
-  background: url("../../img/social_sprites.png") -66px -122px;
+  background: url("../img/social_sprites.png") -66px -122px;
 }
 
 .socials__link--facebook {
-  background: url("../../img/social_sprites.png") -10px -10px;
+  background: url("../img/social_sprites.png") -10px -10px;
 }
 
 .socials__link--facebook:hover {
-  background: url("../../img/social_sprites.png") -66px -10px;
+  background: url("../img/social_sprites.png") -66px -10px;
 }
 
 .socials__link--inst {
-  background: url("../../img/social_sprites.png") -10px -66px;
+  background: url("../img/social_sprites.png") -10px -66px;
 }
 
 .socials__link--inst:hover {
-  background: url("../../img/social_sprites.png") -122px -10px;
+  background: url("../img/social_sprites.png") -122px -10px;
 }
 
 .fixed-menu {

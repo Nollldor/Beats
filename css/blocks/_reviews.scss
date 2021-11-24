@@ -1,7 +1,7 @@
 .section__reviews {
     &:after {
         position: absolute;
-        content: url(../../img/reviews_after.png);
+        content: url(../img/reviews_after.png);
         left: 10%;
         bottom: rem(-20px);
         z-index: $decorZ-index;
@@ -160,7 +160,7 @@
 
     &:before {
         position: absolute;
-        content: url(../../img/reviews_before.png);
+        content: url(../img/reviews_before.png);
         transform: translate(0%, 34%);
         z-index: 1;
 

@@ -1,5 +1,5 @@
 .section__order {
-    background: url(../../img/form_background.png) center center no-repeat;
+    background: url(../img/form_background.png) center center no-repeat;
     background-size: 100% 100%;
     @include tablets {
         background-size: rem(1100px) 100%;
@@ -7,7 +7,7 @@
 
     &:before {
         position: absolute;
-        content: url("../../img/order_before.png");
+        content: url("../img/order_before.png");
         top: rem(-20px);
         right: 10%;
         z-index: $decorZ-index;
@@ -231,7 +231,7 @@
 }
 
 .check__elem:checked ~ .check__button .check__button-checked {
-    background: url("../../img/check_check.png");
+    background: url("../img/check_check.png");
 }
 
 .form__buttons {

@@ -17,7 +17,7 @@
 .section__why {
     &:before {
         position: absolute;
-        content: url("../../img/why_before.png");
+        content: url("../img/why_before.png");
         top: rem(-20px);
         right: 10%;
         z-index: $decorZ-index;
@@ -25,7 +25,7 @@
 
     &:after{
         position: absolute;
-        content: url("../../img/why_after.png");
+        content: url("../img/why_after.png");
         bottom: rem(-20px);
         left: 10%;
         z-index: $decorZ-index;
@@ -110,7 +110,7 @@
 
         &:after {
             position: absolute;
-            content: url(../../img/why_feature_split.png);
+            content: url(../img/why_feature_split.png);
             top: 20%;
             left: 93%;
 
@@ -130,7 +130,7 @@
             justify-content: center;
             align-items: center;
             margin-bottom: rem(24px);
-            background: url(../../img/why_icon_back.png) center center / 95% no-repeat;
+            background: url(../img/why_icon_back.png) center center / 95% no-repeat;
 
             & .feature__icon {
                 width: rem(68px);

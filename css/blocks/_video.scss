@@ -61,7 +61,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: url(../../img/video__splash.png) center center/cover no-repeat;
+        background: url(../img/video__splash.png) center center/cover no-repeat;
         cursor: pointer;
     }
 
@@ -86,7 +86,7 @@
         border: none;
         position: relative;
         &:before{
-            content: url("../../img/play.png");
+            content: url("../img/play.png");
                 display: block;
                 position: absolute;
                 width: rem(12px);
@@ -98,7 +98,7 @@
     &.paused {
         .player__start{
             &:before {
-                content: url(../../img/pause.png);
+                content: url(../img/pause.png);
             }
         }
 
@@ -173,7 +173,7 @@
         }
 
         &:before {
-            content: url("../../img/player__volume.png");
+            content: url("../img/player__volume.png");
             display: block;
             position: absolute;
             width: rem(12px);
