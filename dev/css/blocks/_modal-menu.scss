@@ -1,0 +1,56 @@
+.section__modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: #313131;
+    color: #fff;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 100;
+    display: none;
+}
+
+.modal__close {
+    position: absolute;
+    top: rem(42px);
+    right: rem(42px);
+
+    &--icon {
+        width: rem(20px);
+        height: rem(20px);
+    }
+}
+
+.container__modal {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-menu {
+    width: rem(300px);
+    height: rem(500px);
+}
+
+.modal-menu__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-menu__item {
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(36px);
+    line-height: 2em;
+    text-align: center;
+    transition: color 0.3s;
+
+    &:hover {
+        color: $red;
+    }
+}
+
+        
+        

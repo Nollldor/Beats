@@ -1,0 +1,39 @@
+.modal {
+    display: none;
+
+    &.error-modal {
+        .modal__content {
+            color: red;
+        }
+    }
+
+    &.fancybox-content {
+        padding: 0 !important;
+        margin-bottom: rem(18px);
+    }
+
+    .fancybox-button {
+        display: none !important;
+    }
+}
+
+.modal__container {
+    background: #fff;
+    width: rem(309px);
+    height: rem(176px);
+    padding: rem(35px) rem(60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal__content {
+    margin-bottom: 15px;
+    color: #000;
+    text-align: center;
+
+    &.modal-error {
+        color: red;
+    }
+}
